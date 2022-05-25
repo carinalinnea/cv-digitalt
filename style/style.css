@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed&display=swap');
+
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-family: 'Roboto Condensed', sans-serif;
+}
+.nav-link:active {
+ color: #3f7499 !important;
+}
+.nav-link:hover, .ca-link:hover {
+ border-bottom: 2px #3f7499 solid;
+}
+.ca-link {
+ color: #ffffff;
+}
+
+/* scroll to top */
+#btnScrollToTop {
+ position: fixed;
+ right: 10px;
+ bottom: 10px;
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ background: #dc3545;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+ color: #ffffff;
+ outline: none;
+ border: none;
+ cursor: pointer;
+ z-index: 5;
+}
+#btnScrollToTop:active {
+ background: #8c252e;
+}
+
+/* red border */
+.border-left-red {
+ border-left: 30px solid #dc3545;
+ border-bottom: 30px solid #dc3545;
+}
+.border-right-red {
+ border-right: 30px solid #dc3545;
+ border-bottom: 30px solid #dc3545;
+}
+
+/* background */
+.bg-welcome {
+  background-color: #f0eeee;
+}
+.bg-red {
+  background-color: #dc3545;
+}
+.bg-blue {
+  background-color: #3f7499;
+}
+.bg-dark-blue {
+  background-image: url(/digitalt-cv/img/design-g852987155_1920.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.backlinks {
+  opacity: 0.7;
+}
+.linear-gradient-bg {
+  background: linear-gradient(#013b65, #dc3545);
+}
+
+/* Frontend */
+.jumbotron {
+  background-image: url(/digitalt-cv/img/ocean-g057c871d2_1920.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  padding: 50px 0px;
+  background-attachment: fixed;
+}
+.frontend-info {
+  opacity: 0.7;
+  margin: 40px 0px;
+  padding: 20px ;
+  z-index: -99;
+}
+.frontend-text {
+  z-index: 99;
+  color: #ffffff;
+  padding: 20px 50px;
+}
+
+
+/* SEO */
+.jumbotron2 {
+  background-image: url(/digitalt-cv/img/pawel-czerwinski-fpZZEV0uQwA-unsplash.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  padding: 50px 0px;
+  background-attachment: fixed;
+}
+.frontend-info {
+  opacity: 0.7;
+  margin: 40px 0px;
+  padding: 20px ;
+  z-index: -99;
+}
+.frontend-text {
+  z-index: 99;
+  color: #ffffff;
+}
+
+/* UX/UI */
+.jumbotron3 {
+  background-image: url(/digitalt-cv/img/emily-bernal-v9vII5gV8Lw-unsplash.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  padding: 50px 0px;
+  background-attachment: fixed;
+}
+.frontend-info {
+  opacity: 0.7;
+  margin: 40px 0px;
+  padding: 20px ;
+  z-index: -99;
+}
+.frontend-text {
+  z-index: 99;
+  color: #ffffff;
+}
+.btn-blue {
+ background-color: #3f7499 !important;
+}
+.btn-dark {
+  background-color: black !important;
+}
+.avicii {
+ font-style: italic;
+}
+.thumb {
+ width: 90px;
+}
+.assets {
+  padding: 80px 0px;
+}
+li {
+  list-style: none;
+  padding-left: 10px;
+}
+.fas.fa-check, .blue {
+  color: #3f7499;
+}
+ol, ul {
+  padding-left: 0px !important;
+}
+
+/* Education */
+.container2 {
+ display: flex;
+ flex-direction: column;
+ background-color: #3f7499;
+}
+.single-event-container {
+ padding: 50px 55px;
+ width: 50%;
+ background-color: #3f7499;
+ position: relative;
+}
+.single-event-container.right {
+ margin-left: auto;
+}
+.event-description {
+ background-color: #ffffff;
+ padding: 30px 35px;
+}
+.event-description h2 {
+ margin-bottom: 20px;
+}
+.border {
+ width: 4px;
+ height: 100%;
+ position: absolute;
+ background-color: #ffffff;
+ top: 0;
+ right: -2px;
+}
+.single-event-container.right .border {
+ left: -2px;
+}
+.circle-date {
+ width: 50px;
+ height: 50px;
+ border-radius: 50%;
+ background-color: #ffffff;
+ position: absolute;
+ top: 50px;
+ right: -25px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.single-event-container.right .circle-date {
+ left: -25px;
+}
+
+/* Animation */
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 0.8s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+iframe {
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+}
+
+
+@media all and (max-width: 800px) {
+  
+ .single-event-container {
+   margin: 0;
+   width: 100%;
+ }
+ .single-event-container .border,
+ .single-event-container.right .border {
+   left: 23px;
+ }
+ .single-event-container .circle-date,
+ .single-event-container.right .circle-date {
+   left: 0;
+ }
+}
+
+/* Other media query */
+
+@media screen and (max-width: 480px) {
+  #doit {
+    padding: 10px !important;
+    margin: 10px !important;
+  }
+  #btnScrollToTop {
+    right: 20px;
+    bottom: 20px;
+    width: 30px;
+    height: 30px;
+  }
+  .assets {
+  padding: 20px 0px;
+  }
+  .frontend-text {
+    padding: 0px;
+  }
+  .form_box {
+    width: 100%;
+  }
+  .border-left-red {
+    border-left: 0px;
+    border-bottom: 0px;
+   }
+   .border-right-red {
+    border-right: 0px;
+    border-bottom: 0px;
+   }
+   .reveal{
+    transform: translateY(50px);
+  }
+  
+}
